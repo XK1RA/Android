@@ -23,62 +23,17 @@
             android:layout_gravity="center_horizontal"
             android:textColor="#ff0c28"
             android:textStyle="bold"
-            android:textSize="50dp" />
+            android:textSize="35dp" />
     </LinearLayout>
 
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="58dp"
-        android:id="@+id/linearLayout3">
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/imageView"
-            android:layout_gravity="center_vertical"
-            android:src="@mipmap/body" />
 
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent">
-
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="New CheckBox"
-                android:id="@+id/checkBox" />
-
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="New CheckBox"
-                android:id="@+id/checkBox2" />
-
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="New CheckBox"
-                android:id="@+id/checkBox3" />
-
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="New CheckBox"
-                android:id="@+id/checkBox4" />
-        </LinearLayout>
-    </LinearLayout>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Principal"
-        android:id="@+id/button"
+        android:id="@+id/btnpcpal"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
@@ -87,8 +42,259 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="NUEVO JUEGO"
-        android:id="@+id/button2"
+        android:id="@+id/btnJuegoN"
         android:layout_alignParentBottom="true"
-        android:layout_alignRight="@+id/linearLayout3"
-        android:layout_alignEnd="@+id/linearLayout3" />
+        android:layout_alignRight="@+id/linearLayout2"
+        android:layout_alignEnd="@+id/linearLayout2" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="62dp"
+            android:id="@+id/linearLayout3"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CUERPO"
+                    android:id="@+id/CUERPO"
+                    android:checked="true"
+                    android:onClick="ocultarBoton" />
+
+
+
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="OJOS"
+                    android:id="@+id/OJOS"
+                    android:checked="false"
+                    android:onClick="ocultarBoton" />
+
+
+
+                <CheckBox
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CEJAS"
+                    android:id="@+id/CEJAS"
+                    android:checked="false"
+                    android:onClick="ocultarBoton" />
+
+                <CheckBox
+
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NARIZ"
+                    android:id="@+id/NARIZ"
+                    android:checked="false"
+                    android:onClick="ocultarBoton" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BIGOTE"
+                    android:id="@+id/BIGOTE"
+                    android:checked="false"
+                    android:onClick="ocultarBoton" />
+
+                <CheckBox
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BRAZOS"
+                    android:id="@+id/BRAZOS"
+                    android:checked="false"
+                    android:onClick="ocultarBoton" />
+
+                <CheckBox
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="OREJAS"
+                    android:id="@+id/OREJAS"
+                    android:checked="false"
+                    android:onClick="ocultarBoton" />
+
+                <CheckBox
+
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BOCA"
+                    android:id="@+id/BOCA"
+                    android:checked="false"
+                    android:onClick="ocultarBoton" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ZAPATOS"
+                    android:id="@+id/ZAPATOS"
+                    android:checked="false"
+                    android:onClick="ocultarBoton" />
+
+                <CheckBox
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SOMBRERO"
+                    android:id="@+id/SOMBRERO"
+                    android:checked="false"
+                    android:onClick="ocultarBoton" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="GAFAS"
+                    android:id="@+id/GAFAS"
+                    android:checked="false"
+                    android:onClick="ocultarBoton" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="400dp"
+            android:layout_height="200dp"
+            android:id="@+id/ICUERPO"
+            android:layout_gravity="center_horizontal"
+            android:src="@mipmap/body"
+            android:layout_above="@+id/linearLayout3"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:visibility="visible" />
+
+        <ImageView
+            android:layout_width="400dp"
+            android:layout_height="200dp"
+            android:id="@+id/INARIZ"
+            android:visibility="invisible"
+            android:src="@mipmap/nose"
+            android:layout_centerHorizontal="true"
+            android:layout_alignTop="@+id/ICUERPO" />
+
+        <ImageView
+            android:layout_width="400dp"
+            android:layout_height="200dp"
+            android:id="@+id/ISOMBRERO"
+            android:visibility="invisible"
+            android:src="@mipmap/hat"
+            android:layout_alignTop="@+id/ICUERPO"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageView
+            android:layout_width="400dp"
+            android:layout_height="200dp"
+            android:id="@+id/IBOCA"
+            android:layout_alignTop="@+id/ICUERPO"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:visibility="invisible"
+            android:src="@mipmap/mouth" />
+
+        <ImageView
+            android:layout_width="400dp"
+            android:layout_height="200dp"
+            android:id="@+id/IBIGOTE"
+            android:src="@mipmap/mustache"
+            android:visibility="invisible"
+            android:layout_alignTop="@+id/ICUERPO"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageView
+            android:layout_width="400dp"
+            android:layout_height="200dp"
+            android:id="@+id/IGAFAS"
+            android:src="@mipmap/glasses"
+            android:visibility="invisible"
+            android:layout_alignTop="@+id/ICUERPO"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageView
+            android:layout_width="400dp"
+            android:layout_height="200dp"
+            android:id="@+id/IBRAZOS"
+            android:src="@mipmap/arms"
+            android:visibility="invisible"
+            android:layout_alignTop="@+id/ICUERPO"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageView
+            android:layout_width="400dp"
+            android:layout_height="200dp"
+            android:id="@+id/IOREJAS"
+            android:src="@mipmap/ears"
+            android:layout_alignTop="@+id/ICUERPO"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:visibility="invisible"/>
+
+        <ImageView
+            android:layout_width="400dp"
+            android:layout_height="200dp"
+            android:id="@+id/IOJOS"
+            android:src="@mipmap/eyes"
+            android:layout_alignTop="@+id/ICUERPO"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:visibility="invisible"/>
+
+        <ImageView
+            android:layout_width="400dp"
+            android:layout_height="200dp"
+            android:id="@+id/ICEJAS"
+            android:src="@mipmap/eyebrows"
+            android:visibility="invisible"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/ICUERPO" />
+
+        <ImageView
+            android:layout_width="400dp"
+            android:layout_height="200dp"
+            android:id="@+id/IZAPATOS"
+            android:layout_alignTop="@+id/ICUERPO"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:src="@mipmap/shoes"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
 </RelativeLayout>

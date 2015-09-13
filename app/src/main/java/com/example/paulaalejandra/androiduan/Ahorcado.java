@@ -1,16 +1,34 @@
 package com.example.paulaalejandra.androiduan;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
 public class Ahorcado extends AppCompatActivity {
+
+
+    Button btnpcpal, btnJuegoN;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ahorcado);
+
+        btnpcpal=(Button)findViewById(R.id.btnpcpal) ;
+        btnJuegoN=(Button)findViewById(R.id.btnJuegoN);
+
+        btnpcpal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i=new Intent(getApplicationContext(),Principal.class);
+                startActivity(i);
+            }
+        });
+
     }
 
     @Override

@@ -1,16 +1,42 @@
 package com.example.paulaalejandra.androiduan;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageButton;
 
 public class Principal extends AppCompatActivity {
+
+    ImageButton BtnAh, BtnCp;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_principal);
+
+        BtnAh=(ImageButton)findViewById(R.id.ahorcado);
+        BtnCp=(ImageButton)findViewById(R.id.caradepapa);
+
+        BtnAh.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent i=new Intent(getApplicationContext(),Ahorcado.class);
+                startActivity(i);
+            }
+        });
+        BtnCp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i=new Intent(getApplicationContext(), CaraDePapa.class);
+                startActivity(i);
+            }
+        });
+
     }
 
     @Override
