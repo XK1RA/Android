@@ -6,11 +6,12 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 
 public class Principal extends AppCompatActivity {
 
-    ImageButton BtnAh, BtnCp;
+    Button  BtnCp;
 
 
     @Override
@@ -18,17 +19,10 @@ public class Principal extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_principal);
 
-        BtnAh=(ImageButton)findViewById(R.id.ahorcado);
-        BtnCp=(ImageButton)findViewById(R.id.caradepapa);
 
-        BtnAh.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        BtnCp=(Button)findViewById(R.id.caradepapa);
 
-                Intent i=new Intent(getApplicationContext(),Ahorcado.class);
-                startActivity(i);
-            }
-        });
+
         BtnCp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -1,6 +1,7 @@
 package com.example.paulaalejandra.androiduan;
 
 import android.content.Intent;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -21,7 +22,10 @@ public class CaraDePapa extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cara_de_papa);
 
-        btnpcpal = (Button) findViewById(R.id.btnpcpal);
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setDisplayHomeAsUpEnabled(true);
+
+
         btnJuegoN = (Button) findViewById(R.id.btnJuegoN);
         CUERPO = (CheckBox) findViewById(R.id.CUERPO);
         OJOS = (CheckBox) findViewById(R.id.OJOS);
@@ -47,13 +51,7 @@ public class CaraDePapa extends AppCompatActivity {
         IZAPATOS = (ImageView) findViewById(R.id.IZAPATOS);
 
 
-        btnpcpal.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(getApplicationContext(), Principal.class);
-                startActivity(i);
-            }
-        });
+
         btnJuegoN.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

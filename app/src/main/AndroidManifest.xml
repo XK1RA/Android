@@ -18,11 +18,11 @@
         </activity>
         <activity
             android:name=".CaraDePapa"
-            android:label="@string/title_activity_cara_de_papa" >
-        </activity>
-        <activity
-            android:name=".Ahorcado"
-            android:label="@string/title_activity_ahorcado" >
+            android:label="ATRAS"
+            android:parentActivityName=".Principal" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Principal"/>
         </activity>
     </application>
 
